@@ -1,0 +1,7 @@
+mineCode,weekStart,actual,plannedTarget,downtimeHours,maintenanceEvents,blastingDelays,haulerCount,equipmentUtilization
+BLGT,2026-09-07,7890,8100,6.5,2,1.0,11,0.87
+BLGT,2026-09-14,8021,8100,4.0,1,0.5,12,0.9
+BRWL,2026-09-07,6540,6600,7.25,2,2.0,10,0.84
+BRWL,2026-09-14,6588,6600,5.0,1,1.0,10,0.86
+DGBZ,2026-09-07,3120,3300,9.0,3,2.5,8,0.79
+DGBZ,2026-09-14,3055,3300,11.5,3,3.0,8,0.76

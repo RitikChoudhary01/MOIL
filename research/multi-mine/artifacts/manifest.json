@@ -1,0 +1,110 @@
+{
+ "generated_utc": "2026-09-12T18:10:41.263092+00:00",
+ "region_aoi": {
+  "lon_min": 78.72,
+  "lon_max": 80.62,
+  "lat_min": 20.84,
+  "lat_max": 22.02,
+  "cell_deg": 0.01,
+  "grid_rows": 118,
+  "grid_cols": 190
+ },
+ "sources": {
+  "mrds": {
+   "name": "USGS Mineral Resources Data System (MRDS)",
+   "url": "https://mrdata.usgs.gov/wfs/mrds (regional bbox query)",
+   "license": "USGS public domain",
+   "records": 80,
+   "note": "Labels = proximity to documented Mn occurrences; USGS coverage of India is partial (a known, disclosed limitation)."
+  },
+  "gsi_geology_2M": {
+   "name": "Geology of India 1:2M seamless (GSI via Esri India Living Atlas)",
+   "url": "https://livingatlas.esri.in/server1/rest/services/Geology/Geology/MapServer/0/query",
+   "license": "GSI via NDSAP \u2014 visualization + regional analysis permitted",
+   "polygons": 55,
+   "groups": {
+    "gneiss": 12,
+    "sausar": 18,
+    "other": 24,
+    "sakoli": 1
+   }
+  },
+  "copernicus_dem_glo30": {
+   "name": "Copernicus DEM GLO-30",
+   "license": "ESA Copernicus, CC-BY-4.0",
+   "url": "https://copernicus-dem-30m.s3.amazonaws.com/ (windowed COG reads)"
+  },
+  "sentinel_2_l2a": {
+   "name": "Sentinel-2 L2A (Copernicus, element84 earth-search COGs)",
+   "url": "https://earth-search.aws.element84.com/v1/search",
+   "license": "Copernicus (free, open)",
+   "scenes": [
+    {
+     "tile": "MGRS-43QHD",
+     "scene": "S2C_43QHD_20260619_0_L2A",
+     "date": "2026-06-19",
+     "cloud_pct": 1.26
+    },
+    {
+     "tile": "MGRS-44QKJ",
+     "scene": "S2C_44QKJ_20260619_0_L2A",
+     "date": "2026-06-19",
+     "cloud_pct": 1.0
+    },
+    {
+     "tile": "MGRS-44QLJ",
+     "scene": "S2C_44QLJ_20260619_0_L2A",
+     "date": "2026-06-19",
+     "cloud_pct": 0.19
+    },
+    {
+     "tile": "MGRS-43QHE",
+     "scene": "S2C_43QHE_20260619_0_L2A",
+     "date": "2026-06-19",
+     "cloud_pct": 5.66
+    },
+    {
+     "tile": "MGRS-44QKK",
+     "scene": "S2C_44QKK_20260619_0_L2A",
+     "date": "2026-06-19",
+     "cloud_pct": 4.03
+    },
+    {
+     "tile": "MGRS-44QLK",
+     "scene": "S2C_44QLK_20260619_0_L2A",
+     "date": "2026-06-19",
+     "cloud_pct": 6.18
+    },
+    {
+     "tile": "MGRS-44QMK",
+     "scene": "S2C_44QMK_20260616_0_L2A",
+     "date": "2026-06-16",
+     "cloud_pct": 0.88
+    },
+    {
+     "tile": "MGRS-44QMJ",
+     "scene": "S2B_44QMJ_20260611_0_L2A",
+     "date": "2026-06-11",
+     "cloud_pct": 1.7
+    }
+   ]
+  }
+ },
+ "methodology": {
+  "labels": {
+   "positive": "<= 1.5 km of a USGS MRDS Mn occurrence",
+   "negative": ">= 3.0 km",
+   "excluded": "1.5-3.0 km (ambiguous)",
+   "caveat": "labels = proximity to known mineralization (USGS MRDS), NOT ground-truth ore"
+  },
+  "validation": "spatial block CV, GroupKFold(5) on 0.1-deg blocks, proximity feature EXCLUDED",
+  "honest_auc": {
+   "logistic_auc": 0.8051,
+   "random_forest_auc": 0.8752,
+   "scheme": "spatial block CV, GroupKFold(5) on 0.1-deg blocks, proximity feature EXCLUDED"
+  },
+  "circularity_check": "reported side-by-side as an honesty demo (circular CV AUC 1.00 vs honest 0.81/0.88)",
+  "tonnage": "estMt = sum(cell prospectivity) x 0.26 Mt x (oreGrade/35) \u2014 matches app formula",
+  "cache": "region_features.npz stores raw region rasters; re-runs skip all downloads"
+ }
+}

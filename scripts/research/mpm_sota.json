@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.sciencedirect.com/science/article/pii/S1569843226001706",
+    "name": "A systematic review of deep learning methods for mineral",
+    "snippet": "In this systematic review, 349 studies on deep learning for mineral exploration published between 2018 and 2025 are examined.",
+    "host_name": "www.sciencedirect.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mdpi.com/2075-163X/15/10/1042",
+    "name": "The Evolution of Machine Learning in Large-Scale Mineral  - MDPI",
+    "snippet": "This review aims to explore the latest research progress in machine learning technology in the field of large-scale mineral prediction from 2016 to 2025.",
+    "host_name": "www.mdpi.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net/publication/373323983_Machine_Learning-Based_Mapping_for_Mineral_Exploration",
+    "name": "Machine Learning-Based Mapping for Mineral Exploration",
+    "snippet": "Aug 13, 2026 · CNN, a representative deep learning approach, have been proved to be powerful tools for ML-based mapping for mineral exploration.",
+    "host_name": "www.researchgate.net",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dspace.stir.ac.uk/retrieve/645c2d1f-7b0a-4dd3-a5ba-79188a5db11f/Engineering%20Reports%20-%202024%20-%20Jan%20-%20Advanced%20Mineral%20Deposit%20Mapping%20via%20Deep%20Learning%20and%20SVM%20Integration%20With%20Remote.pdf",
+    "name": "[PDF] Advanced Mineral Deposit Mapping via Deep Learning and SVM",
+    "snippet": "Jan 1, 2026 · In this work, we present a deep learning pipeline to map the mineral deposits in the study area. Initially, we apply a deep convolutional neural ...",
+    "host_name": "dspace.stir.ac.uk",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ui.adsabs.harvard.edu/abs/2024OGRv..16706007L/abstract",
+    "name": "CNN-Transformers for mineral prospectivity mapping in the",
+    "snippet": "The results show that the CNN-Transformer model, capturing both local and global features, outperforms the CNN model with an accuracy of 0.92.",
+    "host_name": "ui.adsabs.harvard.edu",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.azom.com/news.aspx?newsID=65672",
+    "name": "AI Links Mineral Chemistry and Geoscience Data to Guide Exploration",
+    "snippet": "Aug 4, 2026 · Researchers review how AI combines mineral chemistry, geophysical surveys, satellite imagery, geological maps, and text to support the ...",
+    "host_name": "www.azom.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.degruyterbrill.com/document/doi/10.1515/geo-2025-0765/html?srsltid=AfmBOopbkn5h4QrgbtAoSf2QAQ9PPI9ljM0oTAcEDQmgaY3jU3ZMH7_4",
+    "name": "Advancements in machine learning applications for mineral",
+    "snippet": "Nov 15, 2025 · This study summarizes the progress of the application of ML, especially deep learning, in the field of mineral exploration. CNN-transformers ...",
+    "host_name": "www.degruyterbrill.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.earthbyte.org/tag/mineral-exploration",
+    "name": "mineral exploration - EarthByte",
+    "snippet": "Deep learning (DL) offers new opportunities for mineral prospectivity mapping (MPM), but its application is challenged by sparse labelled mineral occurrences, ...",
+    "host_name": "www.earthbyte.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/RichardScottOZ/mineral-exploration-machine-learning/blob/main/README.md",
+    "name": "mineral-exploration-machine-learning/README.md at main - GitHub",
+    "snippet": "This page lists resources for mineral exploration and machine learning, generally with useful code and examples. ML and Data Science is a huge field, these are ...",
+    "host_name": "github.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.preprints.org/manuscript/202607.2303",
+    "name": "Artificial Intelligence for Mineral Exploration: Methods, Foundation",
+    "snippet": "Jul 31, 2026 · This survey reviews ML and foundation models across the mineral exploration pipeline.We cover domain-specific ML for geological, geophysical, ...",
+    "host_name": "www.preprints.org",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.ijcai.org",
+    "name": "Few-Shot Learning on Graphs",
+    "snippet": "by C Zhang · Cited by 81 — Traditional graph mining algorithms usually require both domain understand- ing and exploratory search when doing feature engineering of a specific task. Read more 8 pages",
+    "host_name": "www.ijcai.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net",
+    "name": "Few-Shot Learning with Graph Neural Networks",
+    "snippet": "by VG Satorras · 2018 · Cited by 671 — This paper proposes to use graph neural networks for the purpose of few-shot learning , as well as semi-supervised learning and active learning.",
+    "host_name": "openreview.net",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mdpi.com",
+    "name": "HRRPGraphNet++: Dynamic Graph Neural Network with",
+    "snippet": "by L Chen · 2025 · Cited by 17 — We present HRRPGraphNet ++, a framework combining dynamic graph neural networks with meta-learning for few-shot HRRP recognition.",
+    "host_name": "www.mdpi.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.sciencedirect.com",
+    "name": "Dual-relation heterogeneous graph approach with positive-",
+    "snippet": "by C Gong · 2026 — In mineral exploration , mineral prospectivity mapping (MPM) is a core technical approach for identifying prospective spatial evaluation units using multi-source ... Read more",
+    "host_name": "www.sciencedirect.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ora.ox.ac.uk",
+    "name": "Ore Geology Reviews - Oxford University Research Archive",
+    "snippet": "by FMH Sihombing · 2024 · Cited by 27 — Here, we demonstrate how re-designing exploration data into a graph format increase the effectiveness of mineral prospectivity. We demonstrate ...",
+    "host_name": "ora.ox.ac.uk",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com",
+    "name": "An index of algorithms for few-shot learning/meta-",
+    "snippet": "The repository contains links primarily to conference and journal publications about graph meta- learning and graph few /zero- shot learning . Read more",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://uq-ds-seminar.github.io",
+    "name": "Would prompt work for graph learning? An exploration of",
+    "snippet": "Apr 17, 2025 — This talk seeks to delve into learning paradigms that diverge from traditional supervised learning, in the context of few - shot learning on ... Read more",
+    "host_name": "uq-ds-seminar.github.io",
+    "rank": 6,
+    "date": "Apr 17, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org",
+    "name": "A Survey of Few-Shot Learning on Graphs",
+    "snippet": "Few - shot learning on graphs has gained significant research interest due to the frequent data scarcity issues in real-world graphs .",
+    "host_name": "arxiv.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

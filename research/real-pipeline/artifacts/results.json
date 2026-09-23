@@ -1,0 +1,288 @@
+{
+ "logistic_random_kfold": {
+  "roc_auc": 1.0,
+  "pr_auc": 1.0,
+  "brier": 0.0055
+ },
+ "logistic_spatial_block_cv": {
+  "roc_auc": 1.0,
+  "pr_auc": 1.0,
+  "brier": 0.0059
+ },
+ "random_forest_random_kfold": {
+  "roc_auc": 1.0,
+  "pr_auc": 1.0,
+  "brier": 0.0012
+ },
+ "random_forest_spatial_block_cv": {
+  "roc_auc": 1.0,
+  "pr_auc": 1.0,
+  "brier": 0.0025
+ },
+ "logistic_block_cv_no_proximity": {
+  "roc_auc": 0.5706,
+  "pr_auc": 0.2006,
+  "brier": 0.2771
+ },
+ "random_forest_block_cv_no_proximity": {
+  "roc_auc": 0.6089,
+  "pr_auc": 0.2567,
+  "brier": 0.2004
+ },
+ "prior_only_distance_block_cv": {
+  "roc_auc": 1.0,
+  "pr_auc": 1.0,
+  "brier": null,
+  "note": "score is -distance (not a probability); Brier n/a"
+ },
+ "class_balance": {
+  "positive": 244,
+  "negative": 1098,
+  "ambiguous_excluded": 0
+ },
+ "logistic_coefficients_std_all_features": {
+  "sausar_frac": -0.0147,
+  "gneiss_frac": -0.0304,
+  "other_frac": 0.0874,
+  "elev_m": 0.0993,
+  "slope_deg": 0.1713,
+  "ndvi": 0.2882,
+  "swir_ratio": 0.0545,
+  "brightness": 0.367,
+  "dist_mn_km": -9.9258
+ },
+ "random_forest_importances_all_features": {
+  "sausar_frac": 0.0088,
+  "gneiss_frac": 0.014,
+  "other_frac": 0.0031,
+  "elev_m": 0.0495,
+  "slope_deg": 0.0283,
+  "ndvi": 0.0187,
+  "swir_ratio": 0.0112,
+  "brightness": 0.016,
+  "dist_mn_km": 0.8503
+ },
+ "feature_univariate_auc": {
+  "sausar_frac": 0.5955,
+  "gneiss_frac": 0.3958,
+  "other_frac": 0.5222,
+  "elev_m": 0.608,
+  "slope_deg": 0.614,
+  "ndvi": 0.5279,
+  "swir_ratio": 0.466,
+  "brightness": 0.4994,
+  "dist_mn_km": 0.0
+ },
+ "circularity_warning": {
+  "issue": "labels are distance rings around known occurrences; a model using dist_mn_km therefore separates them trivially (AUC 1.00) BY CONSTRUCTION",
+  "what_we_claim": "the * with-proximity * AUCs are reported ONLY to expose this trap; the published map model and honest metrics are discovery-blind (no proximity feature)",
+  "honest_metrics": {
+   "logistic_block_cv": {
+    "roc_auc": 0.5706,
+    "pr_auc": 0.2006,
+    "brier": 0.2771
+   },
+   "random_forest_block_cv": {
+    "roc_auc": 0.6089,
+    "pr_auc": 0.2567,
+    "brier": 0.2004
+   }
+  }
+ },
+ "logistic_coefficients_std_map_model": {
+  "sausar_frac": 0.1578,
+  "gneiss_frac": -0.2638,
+  "other_frac": 0.2125,
+  "elev_m": 0.5512,
+  "slope_deg": 0.1416,
+  "ndvi": 0.0104,
+  "swir_ratio": -0.3816,
+  "brightness": 0.5953
+ },
+ "random_forest_importances_map_model": {
+  "sausar_frac": 0.058,
+  "gneiss_frac": 0.0716,
+  "other_frac": 0.0265,
+  "elev_m": 0.2509,
+  "slope_deg": 0.1681,
+  "ndvi": 0.1562,
+  "swir_ratio": 0.1319,
+  "brightness": 0.1368
+ },
+ "map_model": "random_forest (discovery-blind)",
+ "tier_thresholds": {
+  "high_min": 0.6957,
+  "medium_min": 0.476,
+  "basis": "quantiles of model scores over all scored cells (relative ranking, not absolute probability of ore)"
+ },
+ "top_targets": [
+  {
+   "lon": 80.285,
+   "lat": 21.955,
+   "prospectivity": 0.9315,
+   "tier": "high",
+   "nearest_known_site": "Banjartola",
+   "nearest_dev_status": "Past Producer",
+   "dist_to_nearest_km": 1.04,
+   "host_litho": "Sausar",
+   "elev_m": 612,
+   "novelty": "near known site (<=1.5 km)"
+  },
+  {
+   "lon": 80.355,
+   "lat": 22.025,
+   "prospectivity": 0.9147,
+   "tier": "high",
+   "nearest_known_site": "Jaitpuri",
+   "nearest_dev_status": "Occurrence",
+   "dist_to_nearest_km": 1.58,
+   "host_litho": "Sausar",
+   "elev_m": 606,
+   "novelty": "step-out (1.5-3 km)"
+  },
+  {
+   "lon": 80.365,
+   "lat": 21.995,
+   "prospectivity": 0.9139,
+   "tier": "high",
+   "nearest_known_site": "Rajpur",
+   "nearest_dev_status": "Occurrence",
+   "dist_to_nearest_km": 1.37,
+   "host_litho": "Sausar",
+   "elev_m": 619,
+   "novelty": "near known site (<=1.5 km)"
+  },
+  {
+   "lon": 80.365,
+   "lat": 21.975,
+   "prospectivity": 0.9134,
+   "tier": "high",
+   "nearest_known_site": "Rajpur",
+   "nearest_dev_status": "Occurrence",
+   "dist_to_nearest_km": 0.89,
+   "host_litho": "Sausar",
+   "elev_m": 659,
+   "novelty": "near known site (<=1.5 km)"
+  },
+  {
+   "lon": 80.355,
+   "lat": 21.985,
+   "prospectivity": 0.9132,
+   "tier": "high",
+   "nearest_known_site": "Rajpur",
+   "nearest_dev_status": "Occurrence",
+   "dist_to_nearest_km": 1.26,
+   "host_litho": "Sausar",
+   "elev_m": 657,
+   "novelty": "near known site (<=1.5 km)"
+  },
+  {
+   "lon": 80.365,
+   "lat": 21.965,
+   "prospectivity": 0.9123,
+   "tier": "high",
+   "nearest_known_site": "Rajpur",
+   "nearest_dev_status": "Occurrence",
+   "dist_to_nearest_km": 1.99,
+   "host_litho": "Sausar",
+   "elev_m": 661,
+   "novelty": "step-out (1.5-3 km)"
+  },
+  {
+   "lon": 80.315,
+   "lat": 21.895,
+   "prospectivity": 0.9087,
+   "tier": "high",
+   "nearest_known_site": "Banjari",
+   "nearest_dev_status": "Occurrence",
+   "dist_to_nearest_km": 1.37,
+   "host_litho": "Sausar",
+   "elev_m": 605,
+   "novelty": "near known site (<=1.5 km)"
+  },
+  {
+   "lon": 80.295,
+   "lat": 21.945,
+   "prospectivity": 0.905,
+   "tier": "high",
+   "nearest_known_site": "Talabori",
+   "nearest_dev_status": "Occurrence",
+   "dist_to_nearest_km": 2.32,
+   "host_litho": "Sausar",
+   "elev_m": 598,
+   "novelty": "step-out (1.5-3 km)"
+  },
+  {
+   "lon": 80.275,
+   "lat": 21.935,
+   "prospectivity": 0.8768,
+   "tier": "high",
+   "nearest_known_site": "Jagantola and Ghondi Mines",
+   "nearest_dev_status": "Past Producer",
+   "dist_to_nearest_km": 2.21,
+   "host_litho": "Sausar",
+   "elev_m": 602,
+   "novelty": "step-out (1.5-3 km)"
+  },
+  {
+   "lon": 80.325,
+   "lat": 21.925,
+   "prospectivity": 0.8714,
+   "tier": "high",
+   "nearest_known_site": "Laugur",
+   "nearest_dev_status": "Past Producer",
+   "dist_to_nearest_km": 2.75,
+   "host_litho": "Sausar",
+   "elev_m": 611,
+   "novelty": "step-out (1.5-3 km)"
+  },
+  {
+   "lon": 80.345,
+   "lat": 21.915,
+   "prospectivity": 0.8696,
+   "tier": "high",
+   "nearest_known_site": "Laugur",
+   "nearest_dev_status": "Past Producer",
+   "dist_to_nearest_km": 2.05,
+   "host_litho": "Sausar",
+   "elev_m": 620,
+   "novelty": "step-out (1.5-3 km)"
+  },
+  {
+   "lon": 80.285,
+   "lat": 21.935,
+   "prospectivity": 0.8673,
+   "tier": "high",
+   "nearest_known_site": "Banjartola",
+   "nearest_dev_status": "Past Producer",
+   "dist_to_nearest_km": 2.72,
+   "host_litho": "Sausar",
+   "elev_m": 615,
+   "novelty": "step-out (1.5-3 km)"
+  }
+ ],
+ "run_utc": "2026-08-26T17:25:15.524370+00:00",
+ "grid": {
+  "cell_deg": 0.01,
+  "aoi": {
+   "lon_min": 79.95,
+   "lon_max": 80.5,
+   "lat_min": 21.65,
+   "lat_max": 22.05
+  },
+  "cells_total": 1836,
+  "high": 184,
+  "medium": 367,
+  "low": 1285
+ },
+ "labels": {
+  "positive_rule": "cell centroid <= 1.5 km of a USGS MRDS MN occurrence",
+  "negative_rule": ">= 3.0 km",
+  "excluded_band": "1.5-3.0 km (ambiguous)",
+  "caveat": "labels = proximity to known mineralization (USGS MRDS), NOT ground-truth ore"
+ },
+ "validation": {
+  "spatial_block_cv": "AOI split into 5x4 blocks; GroupKFold(5) by block id",
+  "why": "random k-fold leaks spatially adjacent cells (spatial autocorrelation) and inflates AUC; block CV gives the honest number (Pohjankukka et al. 2017)"
+ }
+}

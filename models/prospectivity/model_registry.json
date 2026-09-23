@@ -1,0 +1,210 @@
+{
+  "schema_version": "2.0",
+  "created_utc": "2026-09-15T19:17:36.069044+00:00",
+  "purpose": "MOIL manganese prospectivity \u2014 production model registry (v2)",
+  "seed": 42,
+  "data": {
+    "cells_total": 22420,
+    "cells_labeled": 21555,
+    "positives": 355,
+    "negatives": 21200,
+    "excluded_band_km": [
+      1.5,
+      3.0
+    ],
+    "label_rule": {
+      "positive": "<= 1.5 km of a USGS MRDS Mn occurrence",
+      "negative": ">= 3.0 km",
+      "caveat": "labels = proximity to known mineralization, NOT ground truth"
+    },
+    "spatial_blocks": 260,
+    "feature_cache_sha256": "8f8e4b14cffd082fcac1bbfca47c1728119141ef4945913cfe7a1577fc98ec13",
+    "s2_bands_sha256": "36cf036574c4ca635a97ff07d6318601f09ad56a1a9d70ab3df474ce696c506e"
+  },
+  "features": {
+    "order": [
+      "sausar_frac",
+      "sakoli_frac",
+      "gneiss_frac",
+      "other_frac",
+      "elev_m",
+      "slope_deg",
+      "ndvi",
+      "swir_ratio",
+      "brightness",
+      "ferric_iron",
+      "ferrous_iron",
+      "clay_oh"
+    ],
+    "descriptions": {
+      "sausar_frac": "fraction of cell in Sausar Group (GSI 1:2M)",
+      "sakoli_frac": "fraction of cell in Sakoli Group",
+      "gneiss_frac": "fraction of cell in gneissic basement (Amgaon/Tirodi)",
+      "other_frac": "fraction of cell in other lithology",
+      "elev_m": "Copernicus DEM GLO-30 mean elevation",
+      "slope_deg": "slope from DEM gradient",
+      "ndvi": "Sentinel-2 NDVI (B08/B04)",
+      "swir_ratio": "Sentinel-2 SWIR ratio B11/(B08+B11)",
+      "brightness": "Sentinel-2 blue reflectance B02/1e4",
+      "ferric_iron": "alteration: B04/B02 iron-oxide staining",
+      "ferrous_iron": "alteration: B11/B08 ferrous iron",
+      "clay_oh": "alteration: B11/B12 OH-bearing clay minerals"
+    },
+    "new_in_v2": [
+      "ferric_iron",
+      "ferrous_iron",
+      "clay_oh"
+    ]
+  },
+  "models": {
+    "logistic": {
+      "params": "see pipeline script",
+      "honest_cv": {
+        "auc": 0.8176,
+        "brier": 0.1428,
+        "auprc": 0.1634
+      },
+      "scheme": "spatial block CV GroupKFold(5) on 0.1-deg blocks, proximity EXCLUDED",
+      "auc_delta_vs_lr": 0.0
+    },
+    "random_forest": {
+      "params": "see pipeline script",
+      "honest_cv": {
+        "auc": 0.8815,
+        "brier": 0.0222,
+        "auprc": 0.1571
+      },
+      "scheme": "spatial block CV GroupKFold(5) on 0.1-deg blocks, proximity EXCLUDED",
+      "auc_delta_vs_lr": 0.0639
+    },
+    "lightgbm": {
+      "params": {
+        "n_estimators": 199,
+        "learning_rate": 0.021334003608918576,
+        "num_leaves": 23,
+        "min_child_samples": 12,
+        "subsample": 0.7416003137626609,
+        "colsample_bytree": 0.741481171648422,
+        "reg_lambda": 8.56499007064941
+      },
+      "honest_cv": {
+        "auc": 0.9023,
+        "brier": 0.0652,
+        "auprc": 0.1702
+      },
+      "scheme": "spatial block CV GroupKFold(5) on 0.1-deg blocks, proximity EXCLUDED",
+      "auc_delta_vs_lr": 0.0847
+    },
+    "lightgbm_pu": {
+      "params": "see pipeline script",
+      "honest_cv": {
+        "auc": 0.9011,
+        "brier": 0.0979,
+        "auprc": 0.1565
+      },
+      "scheme": "spatial block CV GroupKFold(5) on 0.1-deg blocks, proximity EXCLUDED",
+      "auc_delta_vs_lr": 0.0835
+    },
+    "mlp": {
+      "scheme": "sklearn MLPClassifier(128,64) on standardized features; early stopping; alpha=1e-3 \u2014 neural-network baseline",
+      "honest_cv": {
+        "auc": 0.8795,
+        "brier": 0.0151,
+        "auprc": 0.2212
+      },
+      "role": "baseline (neural net)",
+      "auc_delta_vs_lr": 0.0619
+    }
+  },
+  "pu_learning": {
+    "method": "PU bagging (Mordelet & Vert 2013)",
+    "rounds": 15,
+    "unlabeled_ratio": 3,
+    "rationale": "negatives are 'far from known occurrences', not confirmed barren"
+  },
+  "calibration": {
+    "method": "isotonic, fit on out-of-fold scores",
+    "reliability_bins": [
+      {
+        "bin": "0.0-0.1",
+        "n": 20575,
+        "mean_predicted": 0.0099,
+        "observed_rate": 0.0097
+      },
+      {
+        "bin": "0.1-0.2",
+        "n": 788,
+        "mean_predicted": 0.117,
+        "observed_rate": 0.1218
+      },
+      {
+        "bin": "0.2-0.3",
+        "n": 104,
+        "mean_predicted": 0.2486,
+        "observed_rate": 0.1923
+      },
+      {
+        "bin": "0.3-0.4",
+        "n": 42,
+        "mean_predicted": 0.3721,
+        "observed_rate": 0.4286
+      },
+      {
+        "bin": "0.4-0.5",
+        "n": 46,
+        "mean_predicted": 0.4,
+        "observed_rate": 0.4783
+      }
+    ]
+  },
+  "selection": {
+    "champion": "lightgbm",
+    "ensemble_members": [
+      "lightgbm",
+      "lightgbm_pu"
+    ],
+    "rule": "top-2 models by honest block-CV AUC; map score = mean of their RAW probabilities (relative ranking, v1-compatible estMt); calibrated grids + reliability bins provided for honest probability readings",
+    "tier_thresholds": {
+      "high_min": 0.5727,
+      "medium_min": 0.1582,
+      "basis": "quantiles of ensemble score over labeled cells"
+    }
+  },
+  "univariate_auc": {
+    "sausar_frac": 0.7643,
+    "sakoli_frac": 0.4674,
+    "gneiss_frac": 0.4162,
+    "other_frac": 0.3765,
+    "elev_m": 0.6206,
+    "slope_deg": 0.533,
+    "ndvi": 0.5513,
+    "swir_ratio": 0.4384,
+    "brightness": 0.5373,
+    "ferric_iron": 0.5081,
+    "ferrous_iron": 0.4384,
+    "clay_oh": 0.5402
+  },
+  "artifacts": {
+    "directory": "/home/z/my-project/models/prospectivity",
+    "sha256": {
+      "logistic.joblib": "f773805cf8dd9554c3bc9810e5dce956147dd868bc372e12da948697fe5a0dda",
+      "random_forest.joblib": "865ca84e676cbadf396e44b33547bccbb9225ada845ae1b460f75e9db59723b9",
+      "lightgbm.joblib": "e746a75df1724a136044136a758143d306031784c6876d4748cb4b3dd6c828cf",
+      "lightgbm_pu.joblib": "d6a4938ff63b0aa87868594454bff8632a15effe5c74a583133b64b738eef610",
+      "calibrators.joblib": "1798ae392e7ce7dcc8b2e3d1e2f1c203c7388aa7857a6da9f60a1fc885be2a39",
+      "map_scores_v2.npz": "74fd284165d8b2a706e7e278fad65d55b407cff14f2089bfb8e03a2e2b28bc5a",
+      "mlp.joblib": "effb20711ead1771501b211229dc6b055d484c1614fc8e1486c762697cd02682"
+    }
+  },
+  "determinism_note": "Seed 42 everywhere. Reported metrics + persisted models use LightGBM deterministic=True. The Optuna SEARCH ran multithreaded (fast, bitwise-nondeterministic); its selected configuration was re-evaluated deterministically before reporting.",
+  "environment": {
+    "python": "3.12.14",
+    "lightgbm": "4.5.0",
+    "scikit_learn": "1.5.2",
+    "optuna": "5.0.0"
+  },
+  "reproduce": [
+    "python3 scripts/real-pipeline/fetch_s2_bands.py",
+    "python3 scripts/real-pipeline/train_prospectivity.py"
+  ]
+}

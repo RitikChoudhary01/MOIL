@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://www.sciencedirect.com",
+    "name": "Automated hyperparameter tuning of random forest approach",
+    "snippet": "by M Daviran · 2021 · Cited by 169 — Mineral prospectivity mapping (MPM) is a multiple criteria decision -making procedure which strives to explore and prioritize favorable exploration targets for ... Read more",
+    "host_name": "www.sciencedirect.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net",
+    "name": "(PDF) Comparative Study of Random Forest and Support",
+    "snippet": "Aug 8, 2023 — While all SVM models outperformed the RF model ability on the training dataset achieving an accuracy exceeding 89% versus 78% for the RF model, ...",
+    "host_name": "www.researchgate.net",
+    "rank": 1,
+    "date": "Aug 8, 2023",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mdpi.com",
+    "name": "Mineral Prospectivity Prediction in the Mayoumu Area",
+    "snippet": "by K Qiao · 2026 · Cited by 2 — XGBoost , LightGBM ) significant advantages in mineral prospectivity studies, exhibiting high predictive accuracy and robustness.",
+    "host_name": "www.mdpi.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://exploratory.io",
+    "name": "How It Differs from Random Forest and XGBoost",
+    "snippet": "Mar 22, 2026 — Random Forest emphasizes simplicity and robustness . XGBoost focuses on highly optimized gradient boosting. LightGBM was created to make boosting ... Read more",
+    "host_name": "exploratory.io",
+    "rank": 3,
+    "date": "Mar 22, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nature.com",
+    "name": "Ensemble machine learning strategies for mineral",
+    "snippet": "by P Amirajlo · 2026 · Cited by 5 — Its key advantages include faster training, higher accuracy due to leaf-wise growth, and lower memory usage through histogram-based computation.",
+    "host_name": "www.nature.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.xoriant.com",
+    "name": "Gradient Boosting in Machine Learning: XGBoost LightGBM",
+    "snippet": "XGBoost models may achieve similar or better accuracy with fewer trees due to sequential optimization. However, boosting models can also grow large if many ... Read more",
+    "host_name": "www.xoriant.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://mljar.com",
+    "name": "Machine Learning Algorithm Comparison",
+    "snippet": "Compare popular machine learning algorithms—linear & logistic regression, decision trees, SVMs, random forests, neural networks and more.",
+    "host_name": "mljar.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,343 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   MOIL TERRA — DESIGN COLOR TEMPLATE (restored)
+   Professional mining-intelligence palette:
+   · Brand: deep copper (manganese-ore / MOIL identity)
+   · Neutrals: warm stone tints (no harsh pure-white / cold gray)
+   · Positive: muted pine · Watch: warm yellow · Risk: warm red
+   · Copper = brand · model predictions · prospectivity
+   · Charts: single earth-tone family, theme-aware via CSS vars
+   ============================================================ */
+
+@theme {
+  /* -- Brand: copper scale (replaces Tailwind "amber") ---------- */
+  --color-amber-50: oklch(0.982 0.012 80);
+  --color-amber-100: oklch(0.955 0.028 78);
+  --color-amber-200: oklch(0.912 0.055 72);
+  --color-amber-300: oklch(0.852 0.085 65);
+  --color-amber-400: oklch(0.772 0.11 58);
+  --color-amber-500: oklch(0.692 0.12 52);
+  --color-amber-600: oklch(0.59 0.12 48);
+  --color-amber-700: oklch(0.49 0.11 46);
+  --color-amber-800: oklch(0.4 0.09 45);
+  --color-amber-900: oklch(0.33 0.07 45);
+  --color-amber-950: oklch(0.22 0.045 45);
+
+  /* -- Positive: muted pine scale (replaces Tailwind "emerald") -- */
+  --color-emerald-50: oklch(0.979 0.014 165);
+  --color-emerald-100: oklch(0.949 0.028 165);
+  --color-emerald-200: oklch(0.9 0.058 165);
+  --color-emerald-300: oklch(0.836 0.086 166);
+  --color-emerald-400: oklch(0.758 0.11 166);
+  --color-emerald-500: oklch(0.668 0.115 167);
+  --color-emerald-600: oklch(0.558 0.105 167);
+  --color-emerald-700: oklch(0.458 0.09 167);
+  --color-emerald-800: oklch(0.378 0.073 168);
+  --color-emerald-900: oklch(0.312 0.06 168);
+  --color-emerald-950: oklch(0.2 0.05 168);
+
+  /* -- Risk: warm red scale (replaces Tailwind "red") ------------ */
+  --color-red-300: oklch(0.808 0.094 22);
+  --color-red-400: oklch(0.692 0.168 24);
+  --color-red-500: oklch(0.62 0.196 25);
+  --color-red-600: oklch(0.552 0.198 26);
+  --color-red-700: oklch(0.488 0.186 26);
+  --color-red-800: oklch(0.42 0.16 26);
+
+  /* -- Healthy/safe: calm signal green (semantic "green") -------- */
+  --color-green-50: oklch(0.982 0.012 160);
+  --color-green-100: oklch(0.958 0.023 160);
+  --color-green-200: oklch(0.912 0.046 159);
+  --color-green-300: oklch(0.85 0.075 158);
+  --color-green-400: oklch(0.78 0.105 156);
+  --color-green-500: oklch(0.71 0.117 155);
+  --color-green-600: oklch(0.6 0.11 155);
+  --color-green-700: oklch(0.49 0.092 155);
+  --color-green-800: oklch(0.41 0.073 156);
+  --color-green-900: oklch(0.34 0.06 156);
+  --color-green-950: oklch(0.23 0.05 156);
+
+  /* -- Warning / watch: warm yellow (semantic "yellow") ---------- */
+  --color-yellow-50: oklch(0.987 0.016 95);
+  --color-yellow-100: oklch(0.972 0.033 95);
+  --color-yellow-200: oklch(0.945 0.066 95);
+  --color-yellow-300: oklch(0.905 0.101 92);
+  --color-yellow-400: oklch(0.845 0.132 90);
+  --color-yellow-500: oklch(0.775 0.149 86);
+  --color-yellow-600: oklch(0.66 0.141 79);
+  --color-yellow-700: oklch(0.535 0.114 72);
+  --color-yellow-800: oklch(0.43 0.088 66);
+  --color-yellow-900: oklch(0.36 0.068 62);
+  --color-yellow-950: oklch(0.24 0.045 60);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* ---------- LIGHT (default) · warm paper + copper ---------- */
+:root {
+  --radius: 0.625rem;
+  --background: oklch(0.978 0.005 85);
+  --foreground: oklch(0.25 0.012 55);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.25 0.012 55);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.25 0.012 55);
+  --primary: oklch(0.59 0.12 48);
+  --primary-foreground: oklch(0.985 0.01 85);
+  --secondary: oklch(0.955 0.007 85);
+  --secondary-foreground: oklch(0.32 0.01 55);
+  --muted: oklch(0.955 0.007 85);
+  --muted-foreground: oklch(0.495 0.016 70);
+  --accent: oklch(0.94 0.012 82);
+  --accent-foreground: oklch(0.32 0.01 55);
+  --destructive: oklch(0.552 0.198 26);
+  --border: oklch(0.905 0.007 85);
+  --input: oklch(0.905 0.007 85);
+  --ring: oklch(0.59 0.12 48);
+  --chart-1: oklch(0.62 0.12 50);
+  --chart-2: oklch(0.52 0.09 165);
+  --chart-3: oklch(0.7 0.11 80);
+  --chart-4: oklch(0.58 0.17 27);
+  --chart-5: oklch(0.5 0.01 75);
+  --sidebar: oklch(0.985 0.004 85);
+  --sidebar-foreground: oklch(0.25 0.012 55);
+  --sidebar-primary: oklch(0.59 0.12 48);
+  --sidebar-primary-foreground: oklch(0.985 0.01 85);
+  --sidebar-accent: oklch(0.94 0.012 82);
+  --sidebar-accent-foreground: oklch(0.32 0.01 55);
+  --sidebar-border: oklch(0.905 0.007 85);
+  --sidebar-ring: oklch(0.59 0.12 48);
+
+  /* -- Chart helpers (theme-aware values used by Recharts) -- */
+  --chart-grid: oklch(0.905 0.007 85);
+  --chart-axis: oklch(0.495 0.016 70);
+  --chart-ink: oklch(0.42 0.012 60);
+  --chart-plan: oklch(0.75 0.008 78);
+  --chart-copper: oklch(0.692 0.12 52);
+  --chart-copper-deep: oklch(0.49 0.11 46);
+  --chart-zone: rgba(193, 124, 79, 0.12);  /* forecast zone — subtle copper tint */
+  --chart-rain: oklch(0.52 0.085 170);
+  --chart-risk: oklch(0.552 0.198 26);
+  --map-grid: oklch(0.905 0.007 85);
+  --map-stroke: oklch(0.855 0.008 82);
+
+  /* -- Prospectivity heatmap ladder (copper) -- */
+  --cell-p0: oklch(0.965 0.004 85);
+  --hm-1: oklch(0.93 0.05 80);
+  --hm-2: oklch(0.86 0.08 72);
+  --hm-3: oklch(0.772 0.11 58);
+  --hm-4: oklch(0.64 0.12 50);
+  --hm-5: oklch(0.49 0.11 46);
+}
+
+/* ---------- DARK · warm espresso graphite + copper ---------- */
+.dark {
+  --background: oklch(0.18 0.006 70);
+  --foreground: oklch(0.925 0.006 85);
+  --card: oklch(0.225 0.007 70);
+  --card-foreground: oklch(0.925 0.006 85);
+  --popover: oklch(0.245 0.007 70);
+  --popover-foreground: oklch(0.925 0.006 85);
+  --primary: oklch(0.76 0.11 55);
+  --primary-foreground: oklch(0.21 0.03 50);
+  --secondary: oklch(0.27 0.007 70);
+  --secondary-foreground: oklch(0.925 0.006 85);
+  --muted: oklch(0.27 0.007 70);
+  --muted-foreground: oklch(0.7 0.013 78);
+  --accent: oklch(0.3 0.009 70);
+  --accent-foreground: oklch(0.925 0.006 85);
+  --destructive: oklch(0.66 0.18 25);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.68 0.11 55);
+  --chart-1: oklch(0.75 0.11 55);
+  --chart-2: oklch(0.68 0.1 168);
+  --chart-3: oklch(0.78 0.12 82);
+  --chart-4: oklch(0.68 0.16 25);
+  --chart-5: oklch(0.68 0.01 78);
+  --sidebar: oklch(0.225 0.007 70);
+  --sidebar-foreground: oklch(0.925 0.006 85);
+  --sidebar-primary: oklch(0.75 0.11 55);
+  --sidebar-primary-foreground: oklch(0.21 0.03 50);
+  --sidebar-accent: oklch(0.3 0.009 70);
+  --sidebar-accent-foreground: oklch(0.925 0.006 85);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.68 0.11 55);
+
+  /* -- Chart helpers (dark) -- */
+  --chart-grid: oklch(1 0 0 / 12%);
+  --chart-axis: oklch(0.7 0.013 78);
+  --chart-ink: oklch(0.86 0.01 75);
+  --chart-plan: oklch(0.55 0.01 78);
+  --chart-copper: oklch(0.76 0.11 55);
+  --chart-copper-deep: oklch(0.8 0.09 62);
+  --chart-zone: rgba(222, 148, 104, 0.10);  /* forecast zone — subtle copper tint */
+  --chart-rain: oklch(0.7 0.095 170);
+  --chart-risk: oklch(0.66 0.17 25);
+  --map-grid: oklch(1 0 0 / 10%);
+  --map-stroke: oklch(1 0 0 / 18%);
+
+  /* -- Prospectivity heatmap ladder (dark) -- */
+  --cell-p0: oklch(0.26 0.006 70);
+  --hm-1: oklch(0.33 0.03 60);
+  --hm-2: oklch(0.42 0.06 55);
+  --hm-3: oklch(0.52 0.09 55);
+  --hm-4: oklch(0.63 0.11 55);
+  --hm-5: oklch(0.72 0.11 58);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  /* Branded text selection */
+  ::selection {
+    background: color-mix(in oklch, var(--primary) 24%, transparent);
+  }
+}
+
+/* ---------- Dashboard custom styles ---------- */
+
+/* Slim elegant scrollbar for long lists (PRD usability) */
+.nice-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #d6d3d1 transparent;
+}
+.nice-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.nice-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.nice-scroll::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 3px;
+}
+.dark .nice-scroll {
+  scrollbar-color: #44403c transparent;
+}
+.dark .nice-scroll::-webkit-scrollbar-thumb {
+  background: #44403c;
+}
+
+/* ---- Dashboard utilities ---- */
+
+/* Slim custom scrollbar for long lists (risk factors, action queue…) */
+.scrollbar-slim {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+.scrollbar-slim::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scrollbar-slim::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-slim::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 9999px;
+}
+.scrollbar-slim::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+
+/* Tab-change transition (applied to each TabsContent wrapper) */
+@keyframes tab-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.tab-in {
+  animation: tab-in 0.3s ease-out both;
+}
+
+/* Subtle entrance for KPI values / cards */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.rise-in {
+  animation: rise-in 0.4s ease-out both;
+}
+
+/* Pulsing live-status dot (health indicator in header) */
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.6); }
+}
+.animate-live-pulse {
+  animation: live-pulse 2s ease-in-out infinite;
+}
+
+/* Hero banner entrance */
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-in {
+  animation: hero-in 0.5s ease-out both;
+}

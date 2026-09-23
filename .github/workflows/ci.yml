@@ -1,0 +1,58 @@
+# ============================================================
+# MOIL Intelligence — CI
+# 1. TypeScript: lint + full bun test suite (ML engine, hardening)
+# 2. Python: pytest artifact-integrity suite (skips gracefully if
+#    model artifacts are not yet trained in the runner)
+# Government-facing project: red CI = no merge. No fake data paths.
+# ============================================================
+name: ci
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  web-tests:
+    name: Web (lint + bun test)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: bunx prisma generate
+
+      - name: Lint
+        run: bun run lint
+
+      - name: Unit tests (ML core, hardening, public record)
+        run: bun test
+
+  python-pipeline:
+    name: Python (artifact integrity)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: pip install pytest numpy scikit-learn lightgbm optuna joblib
+
+      - name: Pipeline artifact tests
+        env:
+          MOIL_BASE: ${{ github.workspace }}
+        run: python3 -m pytest tests/python/test_pipeline.py -v

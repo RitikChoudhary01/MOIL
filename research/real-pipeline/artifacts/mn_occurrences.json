@@ -1,0 +1,497 @@
+[
+ {
+  "lon": 80.15867,
+  "lat": 21.99113,
+  "dep_id": "10090215",
+  "site_name": "Kategaon",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090215",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.11701,
+  "lat": 21.76615,
+  "dep_id": "10003833",
+  "site_name": "Amatola",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003833",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.31701,
+  "lat": 21.8828,
+  "dep_id": "10003834",
+  "site_name": "Banjari",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003834",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.27534,
+  "lat": 21.95779,
+  "dep_id": "10003835",
+  "site_name": "Banjartola",
+  "dev_stat": "Past Producer",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003835",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.10867,
+  "lat": 21.79947,
+  "dep_id": "10003836",
+  "site_name": "Barbaspur",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003836",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.18367,
+  "lat": 21.81614,
+  "dep_id": "10003837",
+  "site_name": "Bharweli",
+  "dev_stat": "Past Producer",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003837",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.23367,
+  "lat": 21.8328,
+  "dep_id": "10003838",
+  "site_name": "Bharweli",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003838",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.38367,
+  "lat": 21.97446,
+  "dep_id": "10003839",
+  "site_name": "Bijora",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003839",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.11701,
+  "lat": 21.87447,
+  "dep_id": "10003840",
+  "site_name": "Birsola",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003840",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.40033,
+  "lat": 21.94946,
+  "dep_id": "10003842",
+  "site_name": "Chiklajhori",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003842",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.19201,
+  "lat": 21.89114,
+  "dep_id": "10003843",
+  "site_name": "Dhapewata",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003843",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.08367,
+  "lat": 21.71615,
+  "dep_id": "10003844",
+  "site_name": "Dongargaon",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003844",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.417,
+  "lat": 21.91613,
+  "dep_id": "10003847",
+  "site_name": "Ghondi",
+  "dev_stat": "Past Producer",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003847",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.30034,
+  "lat": 21.89946,
+  "dep_id": "10003848",
+  "site_name": "Gongalpara",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003848",
+  "code_list": "MN"
+ },
+ {
+  "lon": 79.99202,
+  "lat": 21.87864,
+  "dep_id": "10003849",
+  "site_name": "Gulla Hurki",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003849",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.24201,
+  "lat": 21.84947,
+  "dep_id": "10003850",
+  "site_name": "Hirapur",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003850",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.36701,
+  "lat": 22.01612,
+  "dep_id": "10003851",
+  "site_name": "Jaitpuri",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003851",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.35034,
+  "lat": 21.87447,
+  "dep_id": "10003853",
+  "site_name": "Kanatola",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003853",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.11701,
+  "lat": 21.74948,
+  "dep_id": "10003855",
+  "site_name": "Kera",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003855",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.26701,
+  "lat": 21.98279,
+  "dep_id": "10003856",
+  "site_name": "Kokma",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003856",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.20867,
+  "lat": 21.79947,
+  "dep_id": "10003857",
+  "site_name": "Kosmi",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003857",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.25034,
+  "lat": 21.94946,
+  "dep_id": "10003858",
+  "site_name": "Kurthitola",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003858",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.35034,
+  "lat": 21.93279,
+  "dep_id": "10003859",
+  "site_name": "Laugur",
+  "dev_stat": "Past Producer",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003859",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.26701,
+  "lat": 21.86614,
+  "dep_id": "10003862",
+  "site_name": "Peli",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003862",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.16701,
+  "lat": 21.74948,
+  "dep_id": "10003863",
+  "site_name": "Piparia",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003863",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.29201,
+  "lat": 21.99947,
+  "dep_id": "10003864",
+  "site_name": "Polwatur",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003864",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.36701,
+  "lat": 21.98279,
+  "dep_id": "10003865",
+  "site_name": "Rajpur",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003865",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.48366,
+  "lat": 21.96613,
+  "dep_id": "10003867",
+  "site_name": "Samnapur",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003867",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.35034,
+  "lat": 21.86614,
+  "dep_id": "10003871",
+  "site_name": "Sonawani",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003871",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.13367,
+  "lat": 21.99529,
+  "dep_id": "10003872",
+  "site_name": "Titwa",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003872",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.04201,
+  "lat": 21.76615,
+  "dep_id": "10003875",
+  "site_name": "Waraseoni",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10003875",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.20867,
+  "lat": 21.87447,
+  "dep_id": "10090204",
+  "site_name": "Agarware",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090204",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.13367,
+  "lat": 21.84947,
+  "dep_id": "10090206",
+  "site_name": "Behrai",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090206",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.13367,
+  "lat": 21.86614,
+  "dep_id": "10090208",
+  "site_name": "Chatera",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090208",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.16284,
+  "lat": 21.89114,
+  "dep_id": "10090209",
+  "site_name": "Dhapera",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090209",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.14201,
+  "lat": 21.79114,
+  "dep_id": "10090210",
+  "site_name": "Ekodi",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090210",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.36701,
+  "lat": 22.00778,
+  "dep_id": "10090211",
+  "site_name": "Gaonajhola",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090211",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.15034,
+  "lat": 21.79947,
+  "dep_id": "10090212",
+  "site_name": "Garra",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090212",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.13367,
+  "lat": 21.98279,
+  "dep_id": "10090213",
+  "site_name": "Hirmutola",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090213",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.23784,
+  "lat": 21.92168,
+  "dep_id": "10090214",
+  "site_name": "Jamunjhola",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090214",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.26701,
+  "lat": 21.96613,
+  "dep_id": "10090216",
+  "site_name": "Khara",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090216",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.40866,
+  "lat": 21.89114,
+  "dep_id": "10090217",
+  "site_name": "Kot Pahar",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090217",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.25034,
+  "lat": 21.84947,
+  "dep_id": "10090218",
+  "site_name": "Manegaon",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090218",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.43366,
+  "lat": 21.98279,
+  "dep_id": "10090219",
+  "site_name": "Pindkapar",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090219",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.20867,
+  "lat": 21.87447,
+  "dep_id": "10090220",
+  "site_name": "Pipartola",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090220",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.35034,
+  "lat": 21.99947,
+  "dep_id": "10090221",
+  "site_name": "Salpa",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090221",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.35034,
+  "lat": 21.86614,
+  "dep_id": "10090222",
+  "site_name": "Samnapur R.S",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090222",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.467,
+  "lat": 21.94946,
+  "dep_id": "10090223",
+  "site_name": "Sonpuri",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090223",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.31701,
+  "lat": 21.94946,
+  "dep_id": "10090224",
+  "site_name": "Talabori",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090224",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.23367,
+  "lat": 21.92724,
+  "dep_id": "10090225",
+  "site_name": "Umardaoni",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10090225",
+  "code_list": "MN"
+ },
+ {
+  "lon": 79.94202,
+  "lat": 21.85503,
+  "dep_id": "10094105",
+  "site_name": "Ramrama",
+  "dev_stat": "Occurrence",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10094105",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.467,
+  "lat": 21.96613,
+  "dep_id": "10106594",
+  "site_name": "Ukwa",
+  "dev_stat": "Producer",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10106594",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.46033,
+  "lat": 21.95946,
+  "dep_id": "10207184",
+  "site_name": "Ukwa",
+  "dev_stat": "Producer",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10207184",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.26034,
+  "lat": 21.94946,
+  "dep_id": "10231163",
+  "site_name": "Jagantola and Ghondi Mines",
+  "dev_stat": "Past Producer",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10231163",
+  "code_list": "MN"
+ },
+ {
+  "lon": 80.30034,
+  "lat": 21.83277,
+  "dep_id": "60000571",
+  "site_name": "Madhya Pradesh and Maharashtra States",
+  "dev_stat": "Producer",
+  "url": "https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=60000571",
+  "code_list": "MN"
+ }
+]

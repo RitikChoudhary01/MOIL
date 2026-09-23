@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://www.nature.com",
+    "name": "Time series prediction model using LSTM-Transformer",
+    "snippet": "by J Shi · 2024 · Cited by 163 — To address this, we use the LSTM model as the Decoder part of the Transformer , leveraging LSTM strong temporal modeling capabilities to enhance ... Read more",
+    "host_name": "www.nature.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mdpi.com",
+    "name": "LSTM–Transformer-Based Robust Hybrid Deep Learning",
+    "snippet": "by MR Kabir · 2025 · Cited by 143 — This paper proposes a novel financial time series forecasting model based on the deep learning ensemble model LSTM -mTrans-MLP, which integrates ... Read more",
+    "host_name": "www.mdpi.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov",
+    "name": "LSTM–Transformer-Based Mine Pressure Prediction  - PMC",
+    "snippet": "by R Tao · 2026 · Cited by 1 — Accurate mine pressure prediction is essential for understanding roof–support interaction and supporting intelligent monitoring in fully mechanized longwall ...",
+    "host_name": "pmc.ncbi.nlm.nih.gov",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.azomining.com",
+    "name": "LSTM-Transformer Model for Mine Water Inflow Prediction",
+    "snippet": "Aug 16, 2024 — The LSTM - Transformer model outperforms traditional methods in predicting mine water inflow, enhancing accuracy through advanced hybrid deep ...",
+    "host_name": "www.azomining.com",
+    "rank": 3,
+    "date": "Aug 16, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.sciencedirect.com",
+    "name": "Dynamic fusion LSTM-Transformer for prediction in energy",
+    "snippet": "by Y Gong · 2025 · Cited by 15 — A hybrid deep learning model is proposed to predict time - series electrical signal characteristics from human motion energy harvesting devices. Read more",
+    "host_name": "www.sciencedirect.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arno.uvt.nl",
+    "name": "Using LSTMs And Transformers To Forecast Short-term  - arno",
+    "snippet": "by G Ammann · 2022 · Cited by 6 — Forecasting multiple steps ahead had a bigger impact on the performance of the LSTM than the Transformer , indicating that the transformer could better capture ... Read more",
+    "host_name": "arno.uvt.nl",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://link.springer.com",
+    "name": "Time series prediction model based on transformer and LSTM",
+    "snippet": "by H Zhang · 2026 · Cited by 1 — Therefore, the paper proposes a time - series prediction model based on Transformer and LSTM for predicting the disaster rate of mountain torrents ... Read more",
+    "host_name": "link.springer.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://science.data.nasa.gov",
+    "name": "Science Collaborations Sparking New Applications With",
+    "snippet": "Mar 17, 2026 — The Prithvi Geospatial Foundation Model ( Prithvi ) is an open-source AI geospatial foundation model developed through collaboration among NASA ,  ...",
+    "host_name": "science.data.nasa.gov",
+    "rank": 0,
+    "date": "Mar 17, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co",
+    "name": "ibm-nasa-geospatial (IBM-NASA Prithvi Models Family)",
+    "snippet": "These geospatial foundation models make AI accessible for open science users, startups, and enterprises by simplifying model training and deployment.",
+    "host_name": "huggingface.co",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org",
+    "name": "evaluating and enhancing NASA-IBM Prithvi's domain",
+    "snippet": "by CY Hsu · 2024 · Cited by 57 — This paper evaluates the recently released NASA - IBM GFM Prithvi for its predictive performance on high-level image analysis tasks across ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://research.ibm.com",
+    "name": "Prithvi-EO: An Open-Access Geospatial Foundation Model",
+    "snippet": "by H Alemohammad · 2025 — Here, we present Prithvi -EO-2.0, a transformer-based geospatial foundation model collaboratively developed by 42 members from 12 institutions ... Read more",
+    "host_name": "research.ibm.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com",
+    "name": "NASA-IMPACT/Prithvi-EO-2.0: This repository contains",
+    "snippet": "Dec 4, 2024 — This repository contains code and examples based on the TerraTorch library for fine - tuning Prithvi -EO-2.0, a more powerful version of the ... Read more",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "Dec 4, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.clarku.edu",
+    "name": "Foundation Models for Geospatial Analytics (Collaboration",
+    "snippet": "Fine-tuning Prithvi with varying sample sizes shows that it consistently performs better compared to a baseline generative adversarial network (GAN) model,",
+    "host_name": "www.clarku.edu",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,159 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ============ MOIL Manganese AI Solution — SIH Prototype ============
+// Module A: Mine master data (10 real MOIL operations, public info)
+model Mine {
+  id             String            @id @default(cuid())
+  code           String            @unique
+  name           String
+  state          String
+  district       String
+  lat            Float
+  lng            Float
+  type           String // "underground" | "open-pit"
+  oreGrade       Float // typical Mn % of ore
+  annualCapacity Int // tonnes/year
+  status         String            @default("active")
+
+  records        ProductionRecord[]
+  cells          ReserveCell[]
+  predictions    Prediction[]
+  recommendations Recommendation[]
+}
+
+// Module B input: weekly operational history (synthetic, modeled on public aggregates)
+model ProductionRecord {
+  id                  String   @id @default(cuid())
+  mineId              String
+  mine                Mine     @relation(fields: [mineId], references: [id])
+  weekStart           DateTime
+  plannedTarget       Float // tonnes planned for the week
+  actual              Float // tonnes actually produced
+  fitted              Float? // model fit (held-out on last 12 wks) for FR-D2 chart
+  rainfall            Float // mm rainfall in week (IMD-modeled)
+  downtimeHours       Float // equipment downtime hours
+  maintenanceEvents   Int // count of maintenance events
+  blastingDelays      Float // hours of blasting delays
+  haulerCount         Int // active haulers
+  equipmentUtilization Float // 0..1
+  soilMoisture        Float? // m3/m3 — REAL (ERA5 via Open-Meteo), weekly mean
+  tempC               Float? // °C — REAL (ERA5 via Open-Meteo), weekly mean
+
+  @@unique([mineId, weekStart])
+  @@index([weekStart])
+}
+
+// Module A output: reserve likelihood grid cells per mine lease
+model ReserveCell {
+  id           String @id @default(cuid())
+  mineId       String
+  mine         Mine   @relation(fields: [mineId], references: [id])
+  row          Int
+  col          Int
+  lat          Float
+  lng          Float
+  ndvi         Float // vegetation index
+  soilMoisture Float // 0..0.5
+  lst          Float // land surface temp °C
+  rockMatch    Float // 0..1 lithology favorability (Sausar/Sakoli metasediments)
+  distToOre    Float // km to known ore horizon
+  label        Int // synthetic ground truth 0|1
+  probability  Float // model output 0..1
+
+  @@index([mineId])
+}
+
+// Module B output: shortfall predictions with explainability factors
+model Prediction {
+  id         String   @id @default(cuid())
+  mineId     String
+  mine       Mine     @relation(fields: [mineId], references: [id])
+  weekStart  DateTime
+  horizon    Int // weeks ahead (1-4)
+  predicted  Float // tonnes
+  target     Float // tonnes
+  confidence Float // 0..1
+  shortfall  Float // predicted - target (negative = shortfall)
+  status     String // "ok" | "watch" | "risk"
+  factors    String // JSON array of attribution factors
+  p10        Float? // quantile ridge P10 (tonnes) — 80% risk band lower edge
+  p90        Float? // quantile ridge P90 (tonnes) — 80% risk band upper edge
+
+  @@index([mineId, weekStart])
+}
+
+// Module C output: corrective action recommendations
+model Recommendation {
+  id           String   @id @default(cuid())
+  mineId       String
+  mine         Mine     @relation(fields: [mineId], references: [id])
+  weekStart    DateTime
+  type         String // "redeploy" | "blast-schedule" | "maintenance" | "capacity" | "logistics"
+  title        String
+  description  String
+  impactTonnes Float // estimated recovery in tonnes
+  effort       String // "low" | "medium" | "high"
+  priority     Int // 1 = highest
+  rationale    String // explainability trace
+  status       String   @default("proposed")
+
+  @@index([mineId])
+  @@index([status, priority])
+}
+
+// Model training metrics + metadata (for dashboard display, transparency)
+model ModelMeta {
+  id    String @id @default(cuid())
+  key   String @unique
+  value String // JSON payload
+}
+
+// ============ Production hardening v1.2 ============
+
+// Role-based access control (demo-grade: scrypt hashes, HMAC-signed cookie
+// sessions — documented scope in DEPLOY_GUIDE.md; SSO/OIDC is the govt path)
+model User {
+  id           String         @id @default(cuid())
+  email        String         @unique
+  name         String
+  role         String         @default("viewer") // "admin" | "officer" | "viewer"
+  passwordHash String // scrypt: salt:hash hex
+  createdAt    DateTime       @default(now())
+  lastLoginAt  DateTime?
+
+  @@index([role])
+}
+
+// Field-validation feedback loop: geologists mark prospectivity targets
+// VERIFIED / REJECTED after ground checks → stored for the next retrain
+model TargetFeedback {
+  id        String   @id @default(cuid())
+  mineCode  String // 4-letter MOIL code the cell belongs to
+  lat       Float
+  lng       Float
+  score     Float? // model probability at feedback time
+  verdict   String // "verified" | "rejected"
+  note      String?
+  createdBy String // user email
+  createdAt DateTime @default(now())
+
+  @@index([mineCode, verdict])
+}
+
+// Append-only audit trail for every mutating action (ingest, feedback, login)
+model AuditLog {
+  id        String   @id @default(cuid())
+  actor     String // user email or "system"
+  action    String // "login" | "ingest.production" | "target.feedback" | …
+  detail    String // JSON payload summary
+  createdAt DateTime @default(now())
+
+  @@index([action, createdAt])
+}

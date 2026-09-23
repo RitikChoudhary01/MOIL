@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1574954123001073",
+    "name": "A modified U-net-based architecture for segmentation of satellite",
+    "snippet": "This paper proposes a six-layer U-shaped encoder-decoder-based model for satellite image segmentation to segment satellite images into five classes of ...",
+    "host_name": "www.sciencedirect.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.tandfonline.com/doi/full/10.1080/19475705.2023.2196370",
+    "name": "Uni-temporal Sentinel-2 imagery for wildfire detection using deep",
+    "snippet": "Using uni-temporal Sentinel-2 imagery, we proposed a workflow based on deep learning (DL) semantic segmentation models to detect wildfires. This section ...",
+    "host_name": "www.tandfonline.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=AoDcVaJE-1s",
+    "name": "Deep Learning Satellite Imagery Land Cover Classification with U-Net",
+    "snippet": "Nov 4, 2024 · Hi Geospatial Enthusiast! From the previous video/scripts where I challenge myself using Python to classify land cover as alternative to ...",
+    "host_name": "www.youtube.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/computervision/comments/lyo7pu/how_to_do_image_segmentation_on_sentinel2",
+    "name": "How to do image segmentation on Sentinel-2 satellite images?",
+    "snippet": "Mar 5, 2021 · You need a set of images and a set of corresponding “masks”, usually referred to as “ground-truth” through Google Earth Engine, Sentinel Hub,",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ieeexplore.ieee.org/iel8/4609443/10766875/11071946.pdf",
+    "name": "Semantic Segmentation of Burned Areas in Sentinel-2 Satellite",
+    "snippet": "The use of U-Net is logical in this case since it was designed for the semantic segmentation of cells in medical images.",
+    "host_name": "ieeexplore.ieee.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/radiant-earth-insights/detecting-agricultural-croplands-from-sentinel-2-satellite-imagery-a025735d3bd8",
+    "name": "Detecting Agricultural Croplands from Sentinel-2 Satellite Imagery",
+    "snippet": "Feb 3, 2022 · Sentinel-2 is designed for land monitoring, including agriculture, UNet-Agri, a semantic segmentation model to use with Sentinel-2. Our model ...",
+    "host_name": "medium.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://events.ecmwf.int/event/304/contributions/3712/attachments/2131/3774/Scepanovic-Stojanovic_Sanja7s_v2.pdf",
+    "name": "[PDF] Wide-Area Land Cover Mapping With Sentinel-1 Imagery Using",
+    "snippet": "Seven pretrained semantic segmentation models: U-Net [2], the semantic segmentation models are suitable for efficient wide-area mapping using satellite SAR  ...",
+    "host_name": "events.ecmwf.int",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/stolarinhoo/Sentinel-2-Satellite-Images-Semantic-Segmentation-with-U-NET_Deep-Learning-approach",
+    "name": "Sentinel-2 Satellite Images Semantic Segmentation with U-NET",
+    "snippet": "U-NET model designed for semantic segmentation of Sentinel-2 satellite imagery. This project harnesses the power of deep learning to analyze and classify  ...",
+    "host_name": "github.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

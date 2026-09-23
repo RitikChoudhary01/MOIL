@@ -1,0 +1,60 @@
+{
+ "fetched_utc": "2026-09-14T15:46:23.708141Z",
+ "scenes": [
+  {
+   "tile": "MGRS-43QHD",
+   "scene": "S2C_43QHD_20260619_0_L2A",
+   "date": "2026-06-19",
+   "cloud_pct": 1.26
+  },
+  {
+   "tile": "MGRS-44QKJ",
+   "scene": "S2C_44QKJ_20260619_0_L2A",
+   "date": "2026-06-19",
+   "cloud_pct": 1.0
+  },
+  {
+   "tile": "MGRS-44QLJ",
+   "scene": "S2C_44QLJ_20260619_0_L2A",
+   "date": "2026-06-19",
+   "cloud_pct": 0.19
+  },
+  {
+   "tile": "MGRS-43QHE",
+   "scene": "S2C_43QHE_20260619_0_L2A",
+   "date": "2026-06-19",
+   "cloud_pct": 5.66
+  },
+  {
+   "tile": "MGRS-44QKK",
+   "scene": "S2C_44QKK_20260619_0_L2A",
+   "date": "2026-06-19",
+   "cloud_pct": 4.03
+  },
+  {
+   "tile": "MGRS-44QLK",
+   "scene": "S2C_44QLK_20260619_0_L2A",
+   "date": "2026-06-19",
+   "cloud_pct": 6.18
+  },
+  {
+   "tile": "MGRS-44QMK",
+   "scene": "S2C_44QMK_20260616_0_L2A",
+   "date": "2026-06-16",
+   "cloud_pct": 0.88
+  },
+  {
+   "tile": "MGRS-44QMJ",
+   "scene": "S2B_44QMJ_20260611_0_L2A",
+   "date": "2026-06-11",
+   "cloud_pct": 1.7
+  }
+ ],
+ "bands": {
+  "B02": "blue",
+  "B04": "red",
+  "B08": "nir",
+  "B11": "swir16",
+  "B12": "swir22"
+ }
+}

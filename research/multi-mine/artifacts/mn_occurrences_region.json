@@ -1,0 +1,645 @@
+{
+ "count": 80,
+ "records": [
+  {
+   "site": "Kategaon",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.99113,
+   "lon": 80.15867
+  },
+  {
+   "site": "Mansar",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.39951,
+   "lon": 79.26036
+  },
+  {
+   "site": "Amatola",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.76615,
+   "lon": 80.11701
+  },
+  {
+   "site": "Banjari",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.8828,
+   "lon": 80.31701
+  },
+  {
+   "site": "Banjartola",
+   "dev": "Past Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.95779,
+   "lon": 80.27534
+  },
+  {
+   "site": "Barbaspur",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.79947,
+   "lon": 80.10867
+  },
+  {
+   "site": "Bharweli",
+   "dev": "Past Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.81614,
+   "lon": 80.18367
+  },
+  {
+   "site": "Bharweli",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.8328,
+   "lon": 80.23367
+  },
+  {
+   "site": "Bijora",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.97446,
+   "lon": 80.38367
+  },
+  {
+   "site": "Birsola",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.87447,
+   "lon": 80.11701
+  },
+  {
+   "site": "Chiklajhori",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.94946,
+   "lon": 80.40033
+  },
+  {
+   "site": "Dhapewata",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.89114,
+   "lon": 80.19201
+  },
+  {
+   "site": "Dongargaon",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.71615,
+   "lon": 80.08367
+  },
+  {
+   "site": "Enkatola",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.36618,
+   "lon": 80.16701
+  },
+  {
+   "site": "Ghondi",
+   "dev": "Past Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.91613,
+   "lon": 80.417
+  },
+  {
+   "site": "Gongalpara",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.89946,
+   "lon": 80.30034
+  },
+  {
+   "site": "Gulla Hurki",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.87864,
+   "lon": 79.99202
+  },
+  {
+   "site": "Hirapur",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.84947,
+   "lon": 80.24201
+  },
+  {
+   "site": "Jaitpuri",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 22.01612,
+   "lon": 80.36701
+  },
+  {
+   "site": "Kanatola",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.87447,
+   "lon": 80.35034
+  },
+  {
+   "site": "Katangi",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.76615,
+   "lon": 79.80035
+  },
+  {
+   "site": "Kera",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.74948,
+   "lon": 80.11701
+  },
+  {
+   "site": "Kokma",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.98279,
+   "lon": 80.26701
+  },
+  {
+   "site": "Kosmi",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.79947,
+   "lon": 80.20867
+  },
+  {
+   "site": "Kurthitola",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.94946,
+   "lon": 80.25034
+  },
+  {
+   "site": "Laugur",
+   "dev": "Past Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.93279,
+   "lon": 80.35034
+  },
+  {
+   "site": "Peli",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.86614,
+   "lon": 80.26701
+  },
+  {
+   "site": "Piparia",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.74948,
+   "lon": 80.16701
+  },
+  {
+   "site": "Polwatur",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.99947,
+   "lon": 80.29201
+  },
+  {
+   "site": "Rajpur",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.98279,
+   "lon": 80.36701
+  },
+  {
+   "site": "Samnapur",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.96613,
+   "lon": 80.48366
+  },
+  {
+   "site": "Sonawani",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.86614,
+   "lon": 80.35034
+  },
+  {
+   "site": "Titwa",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.99529,
+   "lon": 80.13367
+  },
+  {
+   "site": "Waraseoni",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.76615,
+   "lon": 80.04201
+  },
+  {
+   "site": "Balapur/Hamesha",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.5495,
+   "lon": 79.70035
+  },
+  {
+   "site": "Agarware",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.87447,
+   "lon": 80.20867
+  },
+  {
+   "site": "Baihar",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 22.04945,
+   "lon": 80.567
+  },
+  {
+   "site": "Behrai",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.84947,
+   "lon": 80.13367
+  },
+  {
+   "site": "Bijora",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.97446,
+   "lon": 80.38367
+  },
+  {
+   "site": "Chatera",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.86614,
+   "lon": 80.13367
+  },
+  {
+   "site": "Dhapera",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.89114,
+   "lon": 80.16284
+  },
+  {
+   "site": "Ekodi",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.79114,
+   "lon": 80.14201
+  },
+  {
+   "site": "Gaonajhola",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 22.00778,
+   "lon": 80.36701
+  },
+  {
+   "site": "Garra",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.79947,
+   "lon": 80.15034
+  },
+  {
+   "site": "Hirmutola",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.98279,
+   "lon": 80.13367
+  },
+  {
+   "site": "Jamunjhola",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.92168,
+   "lon": 80.23784
+  },
+  {
+   "site": "Khara",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.96613,
+   "lon": 80.26701
+  },
+  {
+   "site": "Kot Pahar",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.89114,
+   "lon": 80.40866
+  },
+  {
+   "site": "Manegaon",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.84947,
+   "lon": 80.25034
+  },
+  {
+   "site": "Pindkapar",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.98279,
+   "lon": 80.43366
+  },
+  {
+   "site": "Pipartola",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.87447,
+   "lon": 80.20867
+  },
+  {
+   "site": "Salpa",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.99947,
+   "lon": 80.35034
+  },
+  {
+   "site": "Samnapur R.S",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.86614,
+   "lon": 80.35034
+  },
+  {
+   "site": "Sonpuri",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.94946,
+   "lon": 80.467
+  },
+  {
+   "site": "Talabori",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.94946,
+   "lon": 80.31701
+  },
+  {
+   "site": "Umardaoni",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.92724,
+   "lon": 80.23367
+  },
+  {
+   "site": "Ramrama",
+   "dev": "Occurrence",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.85503,
+   "lon": 79.94202
+  },
+  {
+   "site": "Ukwa",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.96613,
+   "lon": 80.467
+  },
+  {
+   "site": "Chorbaoli-Muknapur Manganese Ore",
+   "dev": "Prospect",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.4795,
+   "lon": 79.31036
+  },
+  {
+   "site": "Lohdongri Deposit",
+   "dev": "Past Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.32952,
+   "lon": 79.36036
+  },
+  {
+   "site": "Rungta:S Mine",
+   "dev": "Past Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.39951,
+   "lon": 79.45036
+  },
+  {
+   "site": "Goguldoho Mines: Western and East",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.40951,
+   "lon": 79.43036
+  },
+  {
+   "site": "Laugur Mine",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.92946,
+   "lon": 80.35034
+  },
+  {
+   "site": "Manegaon Mines",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.82947,
+   "lon": 80.26034
+  },
+  {
+   "site": "Beldongri",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.34951,
+   "lon": 79.30036
+  },
+  {
+   "site": "Satak Mine and Satak Extension Mi",
+   "dev": "Past Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.34951,
+   "lon": 79.26036
+  },
+  {
+   "site": "Ukwa",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.95946,
+   "lon": 80.46033
+  },
+  {
+   "site": "Kandri Mine",
+   "dev": "Plant",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.40951,
+   "lon": 79.28036
+  },
+  {
+   "site": "Gumgaon",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.39951,
+   "lon": 78.98367
+  },
+  {
+   "site": "Junewani Mines Area:  Junewani Mi",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.4795,
+   "lon": 79.26036
+  },
+  {
+   "site": "Bhandarbori Mine",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.39951,
+   "lon": 79.45036
+  },
+  {
+   "site": "Jagantola and Ghondi Mines",
+   "dev": "Past Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.94946,
+   "lon": 80.26034
+  },
+  {
+   "site": "Mudda Mines",
+   "dev": "Past Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.4595,
+   "lon": 79.41036
+  },
+  {
+   "site": "Mandri Mine",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.40951,
+   "lon": 79.40036
+  },
+  {
+   "site": "Waregaon Deposit",
+   "dev": "Past Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.32952,
+   "lon": 79.41036
+  },
+  {
+   "site": "Madhya Pradesh and Maharashtra States",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.83277,
+   "lon": 80.30034
+  },
+  {
+   "site": "Tirodi",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.68278,
+   "lon": 79.75035
+  },
+  {
+   "site": "Maharashtra-Madya Pradesh Area",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.95506,
+   "lon": 80.05034
+  },
+  {
+   "site": "Salai-Ghoti Belt",
+   "dev": "Past Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.5095,
+   "lon": 79.43036
+  },
+  {
+   "site": "Maharashtra/Mahya Pradesh Area",
+   "dev": "Producer",
+   "oper": "",
+   "ored": "Mn",
+   "lat": 21.99947,
+   "lon": 79.00038
+  }
+ ]
+}

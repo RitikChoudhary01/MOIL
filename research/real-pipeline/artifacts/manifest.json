@@ -1,0 +1,138 @@
+{
+ "generated_utc": "2026-08-26T17:40:27.364354+00:00",
+ "aoi": {
+  "lon_min": 79.95,
+  "lon_max": 80.5,
+  "lat_min": 21.65,
+  "lat_max": 22.05
+ },
+ "sources": {
+  "mrds": {
+   "name": "USGS Mineral Resources Data System (MRDS)",
+   "url": "https://mrdata.usgs.gov/wfs/mrds?SERVICE=WFS&REQUEST=GetFeature&TYPENAME=mrds&VERSION=1.0.0&maxFeatures=1500&BBOX=79.7,21.4,80.8,22.3",
+   "fetched_utc": "2026-08-26T17:40:28.239906+00:00",
+   "license": "USGS public domain (no restrictions on use)",
+   "records_in_aoi": 55,
+   "dev_status_counts": {
+    "Occurrence": 47,
+    "Past Producer": 5,
+    "Producer": 3
+   },
+   "note": "Labels = proximity to known manganese mineralization, NOT ground-truth ore."
+  },
+  "gsi_geology_2M": {
+   "name": "Geology of India 1:2M seamless (GSI data via Esri India Living Atlas)",
+   "url": "https://livingatlas.esri.in/server1/rest/services/Geology/Geology/MapServer/0/query (envelope query 79.95,21.65,80.5,22.05)",
+   "fetched_utc": "2026-08-26T17:40:29.870984+00:00",
+   "license": "GSI via NDSAP; visualization + regional-level analysis permitted (service metadata)",
+   "polygons": 10,
+   "groups": [
+    "?",
+    "AMGAON GNEISSIC COMPLEX",
+    "SAUSAR",
+    "TIRODI GNEISSIC COMPLEX"
+   ],
+   "note": "1:2,000,000 scale \u2014 regional lithology prior; Bhukosh 1:50K geo-fenced from build sandbox (named upgrade)."
+  },
+  "copernicus_dem_glo30": {
+   "name": "Copernicus DEM GLO-30 (2018/2019)",
+   "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N21_00_E080_00_DEM/Copernicus_DSM_COG_10_N21_00_E080_00_DEM.tif",
+   "fetched_utc": "2026-08-26T17:40:36.408025+00:00",
+   "license": "ESA Copernicus, CC-BY-4.0",
+   "aoi_pixels_decimated": 22860,
+   "note": "Windowed COG read (no full download); slope derived per grid cell via numpy gradient."
+  },
+  "sentinel_2_l2a": {
+   "name": "Sentinel-2 L2A (Copernicus, element84 earth-search COGs)",
+   "search_url": "https://earth-search.aws.element84.com/v1/search (collection sentinel-2-l2a)",
+   "scenes_used": [
+    {
+     "scene": "S2B_44QLJ_20260512_0_L2A",
+     "grid": "MGRS-44QLJ",
+     "cloud_pct": 0,
+     "date": "2026-05-12"
+    },
+    {
+     "scene": "S2B_44QLK_20260512_0_L2A",
+     "grid": "MGRS-44QLK",
+     "cloud_pct": 0.355,
+     "date": "2026-05-12"
+    },
+    {
+     "scene": "S2A_44QMJ_20260429_0_L2A",
+     "grid": "MGRS-44QMJ",
+     "cloud_pct": 0.054,
+     "date": "2026-04-29"
+    },
+    {
+     "scene": "S2B_44QMK_20260512_0_L2A",
+     "grid": "MGRS-44QMK",
+     "cloud_pct": 0.01,
+     "date": "2026-05-12"
+    }
+   ],
+   "fetched_utc": "2026-08-26T17:42:54.328489+00:00",
+   "license": "Copernicus Sentinel data 2026, free and open",
+   "note": "Indices are PROXIES (vegetation stress / dryness / dark-staining brightness). Sentinel-2 has no 2.3-2.4 um band -> no direct Mn mineral detection claimed."
+  },
+  "era5_open_meteo": {
+   "name": "ERA5 reanalysis archive via Open-Meteo (no API key)",
+   "url": "https://archive-api.open-meteo.com/v1/archive",
+   "fetched_utc": "2026-08-26T17:43:09.335034+00:00",
+   "license": "CC-BY-4.0 (attribution: Copernicus/ECMWF via Open-Meteo)",
+   "mines": {
+    "Balaghat (Bharweli)": {
+     "lat": 21.832,
+     "lon": 80.234,
+     "days": 2793
+    },
+    "Tirodi": {
+     "lat": 21.683,
+     "lon": 79.75,
+     "days": 2793
+    },
+    "Ukwa (Kachidongar)": {
+     "lat": 21.962,
+     "lon": 80.464,
+     "days": 2793
+    },
+    "Chikla": {
+     "lat": 21.45,
+     "lon": 79.95,
+     "days": 2793
+    },
+    "Beldongri": {
+     "lat": 21.28,
+     "lon": 79.18,
+     "days": 2793
+    },
+    "Dongri Buzurg": {
+     "lat": 21.1,
+     "lon": 79.35,
+     "days": 2793
+    },
+    "Gumgaon": {
+     "lat": 21.25,
+     "lon": 78.9,
+     "days": 2793
+    },
+    "Kandri": {
+     "lat": 21.4,
+     "lon": 79.05,
+     "days": 2793
+    },
+    "Munsar": {
+     "lat": 20.85,
+     "lon": 79.02,
+     "days": 2793
+    },
+    "Sitasaongi": {
+     "lat": 21.2,
+     "lon": 79.55,
+     "days": 2793
+    }
+   },
+   "note": "Reanalysis (0.25 deg) \u2014 not station observations; labeled REAL but coarse."
+  }
+ }
+}

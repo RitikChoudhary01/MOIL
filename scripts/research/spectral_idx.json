@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://www.sciencedirect.com",
+    "name": "A fusion of multispectral and hyperspectral remote sensing",
+    "snippet": "by J Habashi · 2024 · Cited by 28 — This study used multispectral remote sensing data, including ASTER , Sentinel 2 , and Landsat 8 for detecting alteration zones associated with ore mineralization",
+    "host_name": "www.sciencedirect.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nature.com",
+    "name": "Integration of β-VAE, DWT, and GMM for Sentinel-2-based",
+    "snippet": "by SE Kalkhoran · 2026 — Sentinel - 2 images offer strong capabilities for detecting alteration zones and iron -bearing minerals (Fe2+, Fe3+, and iron oxides).",
+    "host_name": "www.nature.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://hero.epa.gov",
+    "name": "Application of Landsat-8, Sentinel-2, ASTER and WorldView-3",
+    "snippet": "by M Sekandari · Cited by 208 — Multiple sources of spectral data ・ for detailed mapping a variety of hydrothermal alteration minerals ・ the shortwave infrared ( SWIR ) regions.",
+    "host_name": "hero.epa.gov",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov",
+    "name": "Towards better delineation of hydrothermal alterations via",
+    "snippet": "by A Shebl · 2023 · Cited by 74 — The current research strongly recommends integrating Sentinel 2 and ASTER data for deciphering further hydrothermal alteration patterns. Read more",
+    "host_name": "pmc.ncbi.nlm.nih.gov",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nv5geospatialsoftware.com",
+    "name": "Mineral Indices Background",
+    "snippet": "Iron Alteration Index (FEAI) \" Mapping of Hydrothermal Alteration Zones in the Kelaat M'Couna Region Using Airborne Gamma-Ray Spectrometry and Remote Sensing ...",
+    "host_name": "www.nv5geospatialsoftware.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://essay.utwente.nl",
+    "name": "EVALUATING ASTER AND WORLDVIEW-3 MINERAL",
+    "snippet": "The SWIR region of EMS is an important region for mineral. Sentinel - 2 for mapping iron absorption feature parameters. resolution-enhanced hyperspectral data ...",
+    "host_name": "essay.utwente.nl",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  }
+]
