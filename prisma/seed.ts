@@ -792,7 +792,7 @@ async function main() {
     }
   }
   for (let i = 0; i < recRows.length; i += 50) {
-    await db.recommendation.createMany({ data: recRows.slice(i, i + 50) });
+    await db.recommendation.createMany({ data: recRows.slice(i, i + 50) as any });
   }
   console.log(`   ✓ ${recRows.length} corrective recommendations`);
 
