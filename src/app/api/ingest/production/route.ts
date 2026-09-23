@@ -67,7 +67,7 @@ export async function POST(req: Request) {
     // reject the row honestly instead of inventing a value.
     let rainfall = r.rainfall;
     if (rainfall === undefined) {
-      const w = weather[r.mineCode]?.weeks?.[r.weekStart];
+      const w = weather?.[r.mineCode]?.weeks?.[r.weekStart];
       if (w && typeof w.rainfall_mm === "number") {
         rainfall = w.rainfall_mm;
       } else {
@@ -95,6 +95,7 @@ export async function POST(req: Request) {
       // never defaulted to fabricated zeros. Corrections (UPDATE) may be partial.
       const missing = (
         [
+          ["downtimeHours", r.downtimeHours],
           ["maintenanceEvents", r.maintenanceEvents],
           ["blastingDelays", r.blastingDelays],
           ["haulerCount", r.haulerCount],
@@ -108,7 +109,7 @@ export async function POST(req: Request) {
         continue;
       }
       await db.productionRecord.create({
-        data: { mineId, weekStart, plannedTarget: r.plannedTarget ?? r.actual, ...data },
+        data: { mineId, weekStart, plannedTarget: r.plannedTarget ?? r.actual, ...data } as any,
       });
       inserted++;
     }

@@ -119,6 +119,7 @@ export function RealMineGrid({ mineCode }: { mineCode: string }) {
       <ErrorCard
         title="Real satellite grid unavailable"
         message={error ?? "Unknown error"}
+        onRetry={() => window.location.reload()}
       />
     );
   }

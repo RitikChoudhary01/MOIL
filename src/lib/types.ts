@@ -44,6 +44,7 @@ export interface ProductionModelMeta {
   trainedAt: string;
   horizonWeeks: number;
   backtestNote: string;
+  riskBands?: { coverage80: number };
 }
 
 export interface ReserveModelMeta {

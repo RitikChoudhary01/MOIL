@@ -165,6 +165,7 @@ export function OverviewTab({
       : kpis.potentialRecovery;
 
     return {
+      ...kpis, // spread for fields we don't recompute
       lastMonthActual,
       lastMonthTarget,
       lastMonthAchievementPct,
@@ -176,7 +177,6 @@ export function OverviewTab({
       watchCount,
       proposedRecs,
       potentialRecovery,
-      ...kpis, // spread for fields we don't recompute
     };
   }, [regionFilter, production, topRisks, codeToState, recs, mines, kpis]);
 
@@ -321,43 +321,35 @@ export function OverviewTab({
           value={fmtT(activeKpis.lastMonthActual)}
           unit="t"
           icon={TrendingUp}
-          trend={activeKpis.lastMonthAchievementPct >= 98 ? "up" : "down"}
           subtext={`${activeKpis.lastMonthAchievementPct.toFixed(1)}% of ${fmtT(activeKpis.lastMonthTarget)} t plan`}
           subtextTone={activeKpis.lastMonthAchievementPct >= 98 ? "positive" : "warning"}
-          animationDelay={0}
         />
         <KpiCard
           title="Forecast · next 4 weeks"
           value={fmtT(activeKpis.nextMonthPredicted)}
           unit="t"
           icon={CalendarClock}
-          trend={nextGap < 0 ? "down" : "up"}
           subtext={`${nextPct.toFixed(1)}% of plan · ${nextGap < 0 ? "−" : "+"}${fmtT(Math.abs(nextGap))} t · ${activeKpis.atRiskMines}/${activeKpis.totalMines} mines at risk`}
           subtextTone={nextGap < 0 ? "negative" : "positive"}
-          animationDelay={100}
         />
         <KpiCard
           title="Exploration · ranked targets"
           value={real.data ? String(real.data.topTargets.length) : "—"}
           unit={real.data ? "targets" : undefined}
           icon={Crosshair}
-          trend="up"
           subtext={
             real.data
               ? `${real.data.grid.high} high-priority cells · real Balaghat pipeline`
               : "Real Balaghat pipeline loading…"
           }
-          animationDelay={200}
         />
         <KpiCard
           title="Actions · awaiting review"
           value={String(proposedCount)}
           unit="proposed"
           icon={ClipboardCheck}
-          trend={proposedCount > 0 ? "up" : "neutral"}
           subtext={`+${fmtT(proposedTonnes)} t estimated recovery (rule engine, capped)`}
           subtextTone="positive"
-          animationDelay={300}
         />
       </div>
 
