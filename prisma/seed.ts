@@ -745,7 +745,7 @@ async function main() {
     (a, b) => b.baseHaulers - a.baseHaulers || b.efficiency - a.efficiency,
   )[0];
 
-  const recRows: Parameters<typeof db.recommendation.create>[0]["data"][] = [];
+  const recRows: any[] = [];
   let priority = 1;
   const riskPreds = predContext.filter(
     (p) => p.predicted < p.target * 0.985 && p.horizon <= 2, // watch + risk, near-term
